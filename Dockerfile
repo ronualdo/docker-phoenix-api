@@ -1,6 +1,8 @@
 FROM elixir:1.6.5-alpine
 MAINTAINER Ronualdo Maciel <raxmac@gmail.com>
 
+RUN apk add --no-cache inotify-tools
+
 ENV PHOENIX_VERSION 1.3.2
 
 RUN mix local.hex --force &&\
