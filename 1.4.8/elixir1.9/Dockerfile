@@ -7,6 +7,6 @@ ENV PHOENIX_VERSION 1.4.8
 
 RUN mix local.hex --force &&\
     mix local.rebar --force &&\
-    mix archive.install hex phx_new 1.4.8 --force
+    mix archive.install hex phx_new $PHOENIX_VERSION --force
 
 CMD ["bin/ash"]
